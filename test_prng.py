@@ -82,7 +82,7 @@ class TestPdf(unittest.TestCase):
         plt.plot(x, pdf.cdf(x), color='brown')
         plt.figure('Fancy ppf')
         plt.title('Fancy ppf')
-        plt.plot(x, pdf.ppf(x), color='grey')
+        plt.plot(x, pdf.ppf(x), color='black')
         r = pdf.prng(1000000)
         plt.figure('Fancy random variate')
         plt.title('Fancy random variate')

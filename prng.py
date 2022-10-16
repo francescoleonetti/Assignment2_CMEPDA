@@ -66,7 +66,7 @@ class ProbabilityDensityFunction(InterpolatedUnivariateSpline):
     
     def prng(self, size = 1000):
         """Return an array of random values distributed accordingly 
-        to the pdf. Number of values in the array = 'size'. 
+        to the pdf. The number of values in the array = 'size'. 
         """
         return self.ppf(np.random.uniform(size = size))
 
