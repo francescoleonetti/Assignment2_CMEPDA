@@ -21,9 +21,6 @@
 
 import numpy as np
 from scipy.interpolate import InterpolatedUnivariateSpline
-from matplotlib import pyplot as plt
-from scipy.optimize import curve_fit
-
 
 
 class ProbabilityDensityFunction(InterpolatedUnivariateSpline):
@@ -74,14 +71,17 @@ class ProbabilityDensityFunction(InterpolatedUnivariateSpline):
         return self.ppf(np.random.uniform(size = size))
 
 
-if __name__ == '__main__':
-    x = np.linspace(0., np.pi, 2000)
-    y = np.sin((np.cos(np.sin(x)))**2)
-    pdf = ProbabilityDensityFunction(x, y)
-    print(pdf.prng())
 
 
-    
+
+
+
+
+
+
+
+
+
 
 
 
